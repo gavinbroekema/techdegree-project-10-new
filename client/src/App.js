@@ -13,8 +13,9 @@ import Courses from './components/Courses';
 import CourseDetail from './components/CourseDetail';
 import UpdateCourse from './components/UpdateCourse';
 import CreateCourse from "./components/CreateCourse";
-
-
+import UserSignIn from "./components/UserSignIn";
+import UserSignUp from "./components/UserSignUp";
+import UserSignOut from "./components/UserSignOut";
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
         <Route path="/courses/:id" element={<CourseDetail />}/>
         <Route path="/courses/:id/update" element={<UpdateCourse />}/>
         <Route path="/courses/create" element={<CreateCourse />}/>
-
+        <Route path="/usersignin" element={<UserSignIn />}/>
+        <Route path="/usersignout" element={<UserSignUp />}/>
+        <Route path="/usersignup" element={<UserSignOut />}/>
       </Routes>
     </BrowserRouter>
   )

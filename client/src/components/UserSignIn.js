@@ -12,7 +12,7 @@ export default function Header(props) {
           <ul class="header--signedin">
             <li>Welcome, Joe Smith!</li>
             <li>
-              <a href="/usersignout">Sign Out</a>
+              <a href="sign-out.html">Sign Out</a>
             </li>
           </ul>
         </nav>
