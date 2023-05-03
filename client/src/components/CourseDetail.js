@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Header from "./Header";
 
 export default function CourseDetail(props) {
@@ -28,13 +28,13 @@ export default function CourseDetail(props) {
       <main>
         <div class="actions--bar">
           <div class="wrap">
-            <a class="button" href="update-course.html">
+            <Link class="button" to={`/courses/${id}/update`}>
               Update Course
-            </a>
-            <a class="button" href="#">
+            </Link>
+            <Link class="button" to={`/courses/${id}/delete`}>
               Delete Course
-            </a>
-            <a class="button button-secondary" href="index.html">
+            </Link>
+            <a class="button button-secondary" href="/courses">
               Return to List
             </a>
           </div>

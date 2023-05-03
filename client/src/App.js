@@ -11,6 +11,8 @@ import logo from './logo.svg';
 import Header from './components/Header';
 import Courses from './components/Courses';
 import CourseDetail from './components/CourseDetail';
+import UpdateCourse from './components/UpdateCourse';
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/" element={<Header />} />
         <Route path="courses" element={<Courses />}/>
         <Route path="/courses/:id" element={<CourseDetail />}/>
+        <Route path="/courses/:id/update" element={<UpdateCourse />}/>
       </Routes>
     </BrowserRouter>
   )
@@ -26,30 +29,3 @@ function App() {
 }
 
 export default App;
-
-
-// const [courses, setCourses] = useState([]);
-//   useEffect(() => {
-//      fetch('/api/courses')
-//         .then((response) => response.json())
-//         .then((data) => {
-//            console.log(data);
-//            setCourses(data);
-//         })
-//         .catch((err) => {
-//            console.log(err.message);
-//         });
-//   }, []);
-//   return (
-//     <div className="App">
-//         {courses.map(course => <p>{course.title}</p>)}
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//     </div>
-//   );
