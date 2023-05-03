@@ -20,7 +20,7 @@ export default function CourseList(props) {
   return (
     <main>
       <div class="wrap main--grid">{courses}
-      <a class="course--module course--add--module" href="create-course.html">
+      <a class="course--module course--add--module" href="/courses/create">
         <span class="course--add--title">
           <svg
             version="1.1"
