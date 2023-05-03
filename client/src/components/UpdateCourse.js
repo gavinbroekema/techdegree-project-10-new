@@ -64,12 +64,9 @@ export default function UpdateCourse(props) {
           <button class="button" type="submit">
             Update Course
           </button>
-          <button
-            class="button button-secondary"
-            onclick="event.preventDefault(); location.href='/courses';"
-          >
+          <Link className="button button-secondary" to={`/courses/${id}`}>
             Cancel
-          </button>
+          </Link>
         </form>
       </div>
   }
